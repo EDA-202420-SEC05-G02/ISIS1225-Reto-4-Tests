@@ -40,7 +40,7 @@ def put(my_map, key, value):
 
 def contains(my_map, key):
     
-    if key < len(my_map["table"]):
+    if key in my_map["table"]:
         if my_map["table"][key] != "":
             return True
     else:
